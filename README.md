@@ -83,6 +83,21 @@ Back-tester:
 build/bin/back-tester
 ```
 
+Homework pipelines:
+
+```
+build/bin/back-tester task1 --file path/to/file.mbo.json
+build/bin/back-tester task1-hard --folder path/to/folder --merge flat|hierarchy|both
+build/bin/back-tester task2 --file path/to/file.mbo.json --snapshot-every 100000
+build/bin/back-tester task2-hard --folder path/to/folder --merge flat|hierarchy|both --snapshot-every 100000
+```
+
+Convert Databento NDJSON files to Feather:
+
+```
+uv run scripts/convert_to_feather.py path/to/file_or_folder -o path/to/output --benchmark
+```
+
 ## Contributing
 
 Install UV, create a virtual environment, and install the project dependencies:

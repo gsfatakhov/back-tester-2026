@@ -6,7 +6,8 @@ authors = [
     {name = "CMF Team", email = "cmfteam2018@gmail.com"},
 ]
 dependencies = [
-    "pandas>=2.2.0"
+    "pandas>=2.2.0",
+    "pyarrow>=16.1.0",
 ]
 
 requires-python = "==3.12.*"
